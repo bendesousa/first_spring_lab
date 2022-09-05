@@ -8,14 +8,17 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/greeting")
 public class GreetingController {
 
+
+//    MVP 1
+//    @GetMapping
+//    public String greeting(){
+//        return "Good afternoon Ben";
+//    }
+
+
     @GetMapping
     public Greeting greeting(@RequestParam(value = "timeOfDay") String timeOfDay){
-        return new Greeting("Ben", "afternoon");
-    }
-
-    @PathVariable ("/christmas")
-    public Celebration celebration(){
-        return new Celebration("Merry Christmas!");
+        return new Greeting("Ben", timeOfDay);
     }
 
 }

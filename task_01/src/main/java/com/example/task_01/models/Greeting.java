@@ -29,4 +29,8 @@ public class Greeting {
         this.timeOfDay = timeOfDay;
     }
 
+    @Override
+    public String toString() {
+        return "Hello " + timeOfDay + " " + name;
+    }
 }
