@@ -5,7 +5,7 @@ public class Greeting {
     private String name;
     private String timeOfDay;
 
-    public Greeting (String name, String timeOfDay){
+    public Greeting(String name, String timeOfDay) {
         this.name = name;
         this.timeOfDay = timeOfDay;
     }
@@ -28,4 +28,5 @@ public class Greeting {
     public void setTimeOfDay(String timeOfDay) {
         this.timeOfDay = timeOfDay;
     }
+
 }
